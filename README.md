@@ -29,8 +29,8 @@ OS：Linux(CentOS)
 JSライブラリ：jQuery
 IDE：Cloud9
 
-## H2使用素材
+## 使用素材
 
 
-## H2実装機能リスト
+## 実装機能リスト
 https://docs.google.com/spreadsheets/d/154vpOEdKlt6s2qijf22cq6EEIdnlO2l2krmws3gNQcc/edit#gid=885378170

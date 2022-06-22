@@ -1,0 +1,9 @@
+<%= link_to "商品一覧", new_post_path %>
+
+<% @posts.each do |post| %>
+  <%= post.introduction %>
+  <% if post.image.attached? %>
+    <%= image_tag post.image %>
+  <% end %>
+  <%= link_to "詳しく", post_path(post.id) %>
+<% end %>

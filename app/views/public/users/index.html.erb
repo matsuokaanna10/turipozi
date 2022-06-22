@@ -1,0 +1,19 @@
+  <% if @user.image.attached? %>
+    <%= image_tag @user.image %>
+  <% else %>
+    <%= image_tag '20200501_noimage.jpg' %>
+  <% end %>
+<%= @user.name %>
+<%= @user.self_introduction %>
+
+<%= link_to "編集", edit_user_path(@user.id) %>
+
+
+<% @posts.each do |post| %>
+  <%= link_to post.introduction, post_path(post.id) %>
+  <% if post.image.attached? %>
+    <%= image_tag post.image %>
+  <% end %>
+<% end %>
+
+<%= link_to "toukou", new_post_path %>

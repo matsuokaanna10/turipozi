@@ -1,0 +1,6 @@
+<%= form_with model:@user, url:user_path, methot: :patch, local: true do |f| %>
+  <%= f.file_field :image %>
+  <%= f.text_field :name %>
+  <%= f.text_area :self_introduction %>
+  <%= f.submit '投稿する' %>
+<% end %>

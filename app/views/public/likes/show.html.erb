@@ -1,0 +1,4 @@
+<% @user.liked_posts.each do |post| %>
+  <%= post.user.email %>
+  <%= post.content %>
+<% end %>

@@ -1,7 +1,6 @@
 <%= form_with model: @post, local:true do |f| %>
   写真
-  <%# # multiple: trueで複数枚画像選択を可能にする %>
-  <%= f.file_field :image, multiple: true %>
+  <%= f.file_field :image %>
   テキスト
   <%= f.text_area :introduction %>
   <%= f.submit '投稿する' %>

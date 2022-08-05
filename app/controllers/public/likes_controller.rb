@@ -1,4 +1,8 @@
 class Public::LikesController < ApplicationController
+  def show
+    
+  end
+  
   def create
     @like = current_user.likes.create(post_id: params[:post_id])
     redirect_back(fallback_location: root_path)

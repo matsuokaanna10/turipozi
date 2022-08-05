@@ -1,6 +1,6 @@
 class Public::UsersController < ApplicationController
-  def index
-    @user = current_user
+  def show
+    @user = User.find(params[:id])
     @posts = current_user.posts
   end
 
